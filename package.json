@@ -1,0 +1,25 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "my_first_gulp_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyaVyacheslavovna/Project.git"
+  },
+  "keywords": [
+    "�"
+  ],
+  "author": "Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyaVyacheslavovna/Project/issues"
+  },
+  "homepage": "https://github.com/anyaVyacheslavovna/Project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

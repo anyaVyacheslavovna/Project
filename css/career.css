@@ -1,0 +1,383 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	background-color: #f6f6f6;
+}
+
+li {
+	list-style: none;
+}
+.wrapper{
+	min-height: 100%;
+}
+
+.main-container{
+	box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom:41px;
+}
+/*   	HEADER */
+.header{
+	height: 80px;
+	min-width: 960px;
+	background-color: #fff;
+	box-shadow: 0px 2px #d5d5d5;
+}
+.photo{
+	border: 2px solid #c6c6c6;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.image {
+	padding: 9px;
+	display: inline-block;
+	padding-left:130px; 
+}
+.container{
+	min-width: 960px;
+	margin: auto;
+}
+
+.text-top {
+  font-size: 18px;
+  font-family: "FiraSans";
+  color: rgb(65, 65, 65);
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*----------Выпадающий список Мои  Контакты------------*/
+.deletepoint {
+	list-style-type: none; 
+	position: relative;
+}
+.menu ul ul {
+	display: none;
+	list-style-type: none;  
+}
+.menu ul li:hover > ul {
+	display: block;	
+	color: #4e4e4e;
+	font-size: 18px;
+ 	font-family: "FiraSans";
+  	font-weight: bold;
+  	line-height: 1.556;
+	width: 270px;
+	border-radius: 5px;
+	padding: 10px 5px 4px 10px;
+	border:2px solid #dedede;
+}
+.colormenu {
+	color: #9fe3f3;
+	font-size: 18px;
+	font-family: "FiraSans";
+	border-bottom:2px #9fe3f3 dotted;
+	line-height: 80px;
+}
+.list{
+	float: right;
+	display: inline-block;
+	height: 80px;
+	width: 110px;
+	margin-right: 270px;
+}
+.picture{
+	margin-right: 9px;
+}
+.spisok{
+	background-color: #ffffff;
+	position: absolute;
+	width: 270px;
+	top: 68px;
+	right: 0;
+}
+.spisok:before, .spisok:after{
+	content: "";
+	position: absolute;
+	right: 55px;
+	bottom: 99px;
+	border: 10px solid transparent;
+	border-bottom:14px solid #dedede;
+}
+.spisok:after{
+	border-bottom:10px solid white;
+	bottom:98px;
+}
+.spisok li.border{
+	border-bottom: 2px solid #dedede;
+}
+.deletepoint{
+	position: relative;
+}
+
+
+/*-----Сайдбар----*/
+
+.navigation__list{
+	list-style: none;
+	position: relative;
+	height: 45px;
+}
+
+.navigation__link:hover{
+	display: block;
+	text-decoration: none;
+	color: #33c1e3;
+}
+.navigation__link{
+	display: block;
+	text-decoration: none;
+	color: #414141;
+	font-size: 18px;
+  	font-family: "FontAwesome";
+  	text-align: right;
+  	margin-right: 25px;
+  	line-height: 45px;
+}
+.navigation__link_current.navigation__link_human {
+	background: url(../icon/images/about.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_human{
+	background:url(../icon/images/about-black_02.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_human:hover{
+	background:url(../icon/images/about.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_racket{
+	background:url(../icon/images/racket_black.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_current.navigation__link_racket{
+	background:url(../icon/images/racket-blue_03.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_racket:hover{
+	background:url(../icon/images/racket-blue_03.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_bag{
+	background:url(../icon/images/bag-black_03.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_bag:hover{
+	background:url(../icon/images/bag-blue.png) no-repeat;
+	background-position: center left;
+}
+.navigation__link_current.navigation__link_bag{
+	background:url(../icon/images/bag-blue.png) no-repeat;
+	background-position: center left;
+}
+
+.navigation__link_current{
+	color:#33b9dd;
+}
+.navigation__link_current:after{
+	content: "";
+	display: block;
+	width: 6px;
+	background: #33b9dd;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	}
+/*----------Основной контен--------*/
+.variable-content{
+	width: 700px;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.sidebar{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	width: 190px;
+	margin-top: 20px;
+}
+.content{
+	width: 940px;
+	margin: auto;
+}
+.path__image-wrap{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 55px;
+}
+.avatar{
+	border-radius: 10px;
+	height: 220px;
+	width: 220px;
+	border:5px solid #ffffff;
+	box-sizing: border-box;
+}
+.path__text{
+	display: inline-block;
+	margin-bottom: 27px;
+
+}
+.path-wrap{
+	display: inline-block;
+	width: 245px; 
+	font: 35px "FiraSans";
+	color:#414141;
+	vertical-align: top;
+	padding-top: 20px;
+}
+.path{
+	display: inline-block;
+	width: 450px;
+	margin-top: 74px;
+	margin-bottom: 28px;
+}
+
+.path__year{
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.path__year_circle{
+
+	width: 10px;
+	height: 10px;
+	background: #33c1e3;
+	display: inline-block;
+	border-radius: 5px;
+	left: 45px;
+	bottom:31px;
+	margin-right: 10px;
+}
+.path__places:hover{
+	background: #33c1e3;
+	color: white;
+}
+.path__year:hover{
+	color:#33c1e3;
+}
+
+.path__year_circle:hover{
+	box-shadow: 0px 0px 1px 5px #94e0f2;
+}
+
+.path__places{
+	min-width: 350px;
+	min-height: 107;
+	display: inline-block;
+	vertical-align: middle;
+	background: #ffffff;
+	box-shadow: 1px 2px 14px -1px rgba(213,213,213,0.61);
+	border-radius: 15px;
+	color: grey;
+	padding: 21px 0px 21px 21px;
+	margin-bottom: 18px;
+	box-sizing: border-box;
+}
+.path__places-header{	
+	font: 16px "FiraSans";
+
+}
+.path__places-text{
+	font: 14px "FiraSans";
+
+}
+.path__list :hover {
+
+}
+/*------Иконки------*/
+.social{	
+	min-width: 107px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 5px;
+	position: absolute;
+	right: 270px;
+}
+.social-item{
+	list-style: none;
+	height: 30px;
+	width: 31px;
+	display: inline-block;
+	margin-left: 7px;
+}
+.social .social-item:first-child{
+	margin-right: 2px;
+	display: inline-block;
+}
+.sprite {
+    background: url(../img/spritesheet.png) no-repeat;
+    display: inline-block;
+}
+
+.social-link-tw {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -5px;
+
+}
+
+ .social-link-tw:hover {
+    width: 31px;
+    height: 30px;
+    background-position: -46px -5px;
+}
+
+ .social-link-vk {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -45px;
+}
+
+ .social-link-vk:hover{
+    width: 31px;
+    height: 30px;
+    background-position: -46px -45px;
+}
+
+ .social-link-fb {
+    width: 31px;
+    height: 30px;
+    background-position: -87px -5px;
+}
+
+ .social-link-fb:hover {
+    width: 31px;
+    height: 30px;
+    background-position: -87px -45px;
+}
+
+
+.footer{
+	height: 50px;
+	min-width: 960px;
+	margin-top: -50px;
+	text-align: center;
+	background-color: #414141;
+}
+.footer-wrap{
+	margin: auto;
+	position: relative;
+}
+.copyright{
+  	font-size: 14px;
+  	font-family: "FiraSans";
+  	color: rgb(156, 156, 156);
+  	line-height: 50px;
+  	display: inline-block;
+  	vertical-align: top;
+  	position: absolute;
+  	left: 130px;
+}
+
