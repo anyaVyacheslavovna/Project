@@ -10,6 +10,26 @@ body{
 	height: 100%;
 	background-color: #f6f6f6;
 }
+@font-face{
+	font-family: FiraSans-Regular;
+	src:url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face{
+	font-family: FiraSans-Bold;
+	src:url(../fonts/FiraSans-Bold.ttf);
+}
+@font-face{
+	font-family: FiraSans-Medium;
+	src:url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face{
+	font-family: FiraSans-Light;
+	src:url(../fonts/FiraSans-Light.ttf);
+}
+@font-face{
+	font-family: OpenSans-Bold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
 .wrapper{
 	min-height: 100%;
 }
@@ -43,7 +63,7 @@ body{
 
 .text-top {
   font-size: 18px;
-  font-family: "FiraSans";
+  font-family: "FiraSans-Regular";
   color: rgb(65, 65, 65);
   text-align: left;
   display: inline-block;
@@ -78,7 +98,7 @@ body{
 .colormenu {
 	color: #9fe3f3;
 	font-size: 18px;
-	font-family: "FiraSans";
+	font-family: "FiraSans-Bold";
 	border-bottom:2px #9fe3f3 dotted;
 	line-height: 80px;
 }
@@ -86,8 +106,8 @@ body{
 	float: right;
 	display: inline-block;
 	height: 80px;
-	width: 110px;
-	margin-right: 270px;
+	width: 123px;
+	margin-right: 240px;
 }
 .picture{
 	margin-right: 9px;
@@ -103,13 +123,13 @@ body{
 	content: "";
 	position: absolute;
 	right: 55px;
-	bottom: 103px;
+	bottom: 99px;
 	border: 10px solid transparent;
 	border-bottom:14px solid #dedede;
 }
 .spisok:after{
 	border-bottom:10px solid white;
-	bottom:102px;
+	bottom:98px;
 }
 .spisok li.border{
 	border-bottom: 2px solid #dedede;
@@ -137,7 +157,7 @@ body{
 	text-decoration: none;
 	color: #414141;
 	font-size: 18px;
-  	font-family: "FontAwesome";
+  	font-family: "FiraSans-Bold";
   	text-align: right;
   	margin-right: 25px;
   	line-height: 45px;
@@ -333,32 +353,4 @@ body{
   	position: absolute;
   	left: 130px;
 }
-
-
-
-/*--------Скроллбар--------*/
-::-webkit-scrollbar-button {
-width:5px;
-height:0px
-}
-::-webkit-scrollbar-track {
-background-color:#f6f6f6;
-}
-::-webkit-scrollbar-thumb {
--webkit-border-radius: 0px;
-border-radius: 0px;
-background-color:#d8d8d8;
-}
-::-webkit-scrollbar-thumb:hover{
-background-color:#d8d8d8;
-}
-::-webkit-resizer{
-width:4px;
-height:0px
-
-}
-::-webkit-scrollbar{
-width: 5px;
-height: 7px;
-}
-/*---------------*/
+ 

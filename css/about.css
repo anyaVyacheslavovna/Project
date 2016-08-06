@@ -10,6 +10,29 @@ body{
 	height: 100%;
 	background-color: #f6f6f6;
 }
+@font-face{
+	font-family: FiraSans-Regular;
+	src:url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face{
+	font-family: FiraSans-Bold;
+	src:url(../fonts/FiraSans-Bold.ttf);
+}
+@font-face{
+	font-family: FiraSans-Medium;
+	src:url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face{
+	font-family: FiraSans-Light;
+	src:url(../fonts/FiraSans-Light.ttf);
+}
+@font-face{
+	font-family: OpenSans-Bold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+a{
+	text-decoration: none;
+}
 .wrapper{
 	min-height: 100%;
 }
@@ -24,7 +47,9 @@ body{
 	background-color: #fff;
 	box-shadow: 0px 2px #d5d5d5;
 }
-.photo{
+.image__photo{
+	width:62px;
+	height: 62px;
 	border: 2px solid #c6c6c6;
 	border-radius: 50%;
 	display: inline-block;
@@ -33,8 +58,11 @@ body{
 }
 .image {
 	padding: 9px;
-	display: inline-block;
 	padding-left: 130px;
+	display: inline-block;
+}
+.image__wrap{
+	display: inline-block;
 }
 .container{
 	min-width: 960px;
@@ -42,8 +70,7 @@ body{
 }
 
 .text-top {
-  font-size: 18px;
-  font-family: "FiraSans";
+  font: 18px "FiraSans-Regular";
   color: rgb(65, 65, 65);
   text-align: left;
   display: inline-block;
@@ -55,73 +82,71 @@ body{
 	padding-bottom:90px;
 }
 /*----------Выпадающий список Мои  Контакты------------*/
-.deletepoint {
+.contacts__list {
 	list-style-type: none; 
 	position: relative;
 }
-.menu ul ul {
+.contacts__menu ul ul {
 	display: none;
 	list-style-type: none;  
 }
-.menu ul li:hover > ul {
+.contacts__menu ul li:hover > ul {
 	display: block;	
 	color: #4e4e4e;
-	font-size: 18px;
- 	font-family: "FiraSans";
-  	font-weight: bold;
-  	line-height: 1.556;
+	font: bold 18px "FiraSans";
 	width: 270px;
 	border-radius: 5px;
 	padding: 10px 5px 4px 10px;
 	border:2px solid #dedede;
 }
-.colormenu {
+.contacts__menu {
 	color: #9fe3f3;
-	font-size: 18px;
-	font-family: "FiraSans";
+	font: 18px "FiraSans-Bold";
 	border-bottom:2px #9fe3f3 dotted;
 	line-height: 80px;
 }
-.list{
+.contacts{
 	float: right;
-	display: inline-block;
 	height: 80px;
-	width: 110px;
-	margin-right: 270px;
+	margin-right: 240px;
 }
-.picture{
+.contacts__picture{
 	margin-right: 9px;
 }
-.spisok{
+.contacts__list_hidden{
 	background-color: #ffffff;
 	position: absolute;
 	width: 270px;
 	top: 68px;
 	right: 0;
+
 }
-.spisok:before, .spisok:after{
+.contacts__list_hidden a{
+	color: #5a5a5a;
+}
+.contacts__list_hidden:before, .contacts__list_hidden:after{
 	content: "";
 	position: absolute;
 	right: 55px;
-	bottom: 99px;
+	bottom: 84px;
 	border: 10px solid transparent;
 	border-bottom:14px solid #dedede;
 }
-.spisok:after{
+.contacts__list_hidden:after{
 	border-bottom:10px solid white;
-	bottom:98px;
+	bottom:83px;
 }
-.spisok li.border{
+.contacts__list_hidden li.contacts__item{
 	border-bottom: 2px solid #dedede;
 }
-.deletepoint{
+.contacts__list{
 	position: relative;
 }
 
 
 /*-----Сайдбар----*/
 
-.navigation__list{
+.navigation__item{
 	list-style: none;
 	position: relative;
 	height: 45px;
@@ -136,11 +161,11 @@ body{
 	display: block;
 	text-decoration: none;
 	color: #414141;
-	font-size: 18px;
-  	font-family: "FontAwesome";
+	font:18px "FiraSans-Bold";
   	text-align: right;
-  	margin-right: 25px;
+  	margin: 0 25 0 0px;
   	line-height: 45px;
+  	transition: all 1s 1s linear;
 }
 .navigation__link_current.navigation__link_human {
 	background: url(../icon/images/about.png) no-repeat;
@@ -179,11 +204,10 @@ body{
 	background-position: center left;
 }
 
-.navigation__link_current{                        /* активное меню */
+.navigation__link_current{                      
 	color:#33b9dd;
 }
-.navigation__link_current:after{                  /* Дает палочку */
-	content: "";
+.navigation__link_current:after{                  
 	display: block;
 	width: 6px;
 	background: #33b9dd;
@@ -194,78 +218,79 @@ body{
 	}
 /*----------Основной контен--------*/
 .variable-content{
-	width: 700px;
+	width: 686px;
 	display: inline-block;
-	margin-top: 20px;
 }
 .sidebar{
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 20px;
+	margin: 0px 20px 0px 0px;
 	width: 190px;
-	margin-top: 20px;
 }
 .content{
 	width: 940px;
 	margin: auto;
+	padding: 23px;
+
 }
 .image-wrap{
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 55px;
+	margin:0px 55px 0px 0px;
 }
-.avatar{
-	border-radius: 100px;
-	height: 200px;
-	width: 200px;
+.image__avatar{
+	border-radius: 50%;
+    height: 219px;
+    width: 219px;
 	border:5px solid #ffffff;
 	box-sizing: border-box;
 }
 .info{
-	height: 322px;
-	width: 399px;
+	width: 380px;
 	font-size: 18px;
-	font-family: "FontAwesome";
 	color: #414141;
 	display: inline-block;
 }
-.about_text{
+.info__text{
 	color: #9e9e9e;
-	width: 424px;
 	height: 345px;
 	overflow-y: scroll;
+	font-family: "FiraSans-Light"
+}
+.info__aboutme{
+	font-family: "FiraSans-Medium"
 }
 /*-------Кнопка скачать-----*/
-.button{
+.info__button{
 	height: 40px;
 	width: 173px;
 	margin-left: 252px;
 	background:url(../icon/images/download.png);
 	margin-top: 49px;
+	font-family: "OpenSans-Bold"
 }
-.button:hover{
+.info__button:hover{
 	background:url(../icon/images/download_active.png);
 	margin-left: 252px;
 	margin-top: 49px;
 
 }
 /*------Иконки------*/
-.social{	
+.social__list {	
 	min-width: 107px;
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 5px;
+	padding-top: 10px;
 	position: absolute;
-	right: 270px;
+	right: 0;
 }
-.social-item{
+.social__item{
 	list-style: none;
 	height: 30px;
 	width: 31px;
 	display: inline-block;
-	margin-left: 7px;
 }
-.social .social-item:first-child{
+.social__list .social__item:first-child{
 	margin-right: 2px;
 	display: inline-block;
 }
@@ -274,38 +299,38 @@ body{
     display: inline-block;
 }
 
-.social-link-tw {
+.social__link_tw {
     width: 31px;
     height: 30px;
     background-position: -5px -5px;
 
 }
 
- .social-link-tw:hover {
+ .ssocial__link_tw:hover {
     width: 31px;
     height: 30px;
     background-position: -46px -5px;
 }
 
- .social-link-vk {
+ .social__link_vk {
     width: 31px;
     height: 30px;
     background-position: -5px -45px;
 }
 
- .social-link-vk:hover{
+ .social__link_vk:hover{
     width: 31px;
     height: 30px;
     background-position: -46px -45px;
 }
 
- .social-link-fb {
+ .social__link_fb {
     width: 31px;
     height: 30px;
     background-position: -87px -5px;
 }
 
- .social-link-fb:hover {
+ .social__link_fb:hover {
     width: 31px;
     height: 30px;
     background-position: -87px -45px;
@@ -320,17 +345,44 @@ body{
 	background-color: #414141;
 }
 .footer-wrap{
+	height: 50px;
 	margin: auto;
 	position: relative;
+	max-width: 940px;
 }
-.copyright{
-  	font-size: 14px;
-  	font-family: "FiraSans";
+.footer__copyright{
+  	font:14px "FiraSans-Light";
   	color: rgb(156, 156, 156);
   	line-height: 50px;
   	display: inline-block;
   	vertical-align: top;
-  	position: absolute;
-  	left: 130px;
 }
- 
+
+
+
+/*--------Скроллбар--------*/
+::-webkit-scrollbar-button {
+width:5px;
+height:0px
+}
+::-webkit-scrollbar-track {
+background-color:#f6f6f6;
+}
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#d8d8d8;
+}
+::-webkit-scrollbar-thumb:hover{
+background-color:#d8d8d8;
+}
+::-webkit-resizer{
+width:4px;
+height:0px
+
+}
+::-webkit-scrollbar{
+width: 5px;
+height: 7px;
+}
+/*---------------*/

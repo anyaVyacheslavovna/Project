@@ -11,6 +11,27 @@ body{
 	background-color: #f6f6f6;
 }
 
+@font-face{
+	font-family: FiraSans-Regular;
+	src:url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face{
+	font-family: FiraSans-Bold;
+	src:url(../fonts/FiraSans-Bold.ttf);
+}
+@font-face{
+	font-family: FiraSans-Medium;
+	src:url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face{
+	font-family: FiraSans-Light;
+	src:url(../fonts/FiraSans-Light.ttf);
+}
+@font-face{
+	font-family: OpenSans-Bold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+
 li {
 	list-style: none;
 }
@@ -49,7 +70,7 @@ li {
 
 .text-top {
   font-size: 18px;
-  font-family: "FiraSans";
+  font-family: "FiraSans-Regular";
   color: rgb(65, 65, 65);
   text-align: left;
   display: inline-block;
@@ -80,7 +101,7 @@ li {
 .colormenu {
 	color: #9fe3f3;
 	font-size: 18px;
-	font-family: "FiraSans";
+	font-family: "FiraSans-Bold";
 	border-bottom:2px #9fe3f3 dotted;
 	line-height: 80px;
 }
@@ -88,8 +109,8 @@ li {
 	float: right;
 	display: inline-block;
 	height: 80px;
-	width: 110px;
-	margin-right: 270px;
+	width: 123px;
+	margin-right: 240px;
 }
 .picture{
 	margin-right: 9px;
@@ -139,7 +160,7 @@ li {
 	text-decoration: none;
 	color: #414141;
 	font-size: 18px;
-  	font-family: "FontAwesome";
+  	font-family: "FiraSans-Bold";
   	text-align: right;
   	margin-right: 25px;
   	line-height: 45px;
@@ -227,12 +248,13 @@ li {
 .path__text{
 	display: inline-block;
 	margin-bottom: 27px;
+	min-width: 275px;
 
 }
 .path-wrap{
 	display: inline-block;
 	width: 245px; 
-	font: 35px "FiraSans";
+	font: 35px "FiraSans-Medium";
 	color:#414141;
 	vertical-align: top;
 	padding-top: 20px;
@@ -248,6 +270,7 @@ li {
 	display: inline-block;
 	margin-right: 10px;
 	vertical-align: middle;
+	font-family: "FiraSans-Light"
 }
 .path__year_circle{
 
@@ -286,11 +309,11 @@ li {
 	box-sizing: border-box;
 }
 .path__places-header{	
-	font: 16px "FiraSans";
+	font: 16px "FiraSans-Regular";
 
 }
 .path__places-text{
-	font: 14px "FiraSans";
+	font: 14px "FiraSans-Light";
 
 }
 .path__list :hover {
@@ -372,7 +395,7 @@ li {
 }
 .copyright{
   	font-size: 14px;
-  	font-family: "FiraSans";
+  	font-family: "FiraSans-Light";
   	color: rgb(156, 156, 156);
   	line-height: 50px;
   	display: inline-block;

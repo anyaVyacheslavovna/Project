@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 	 	<title>My site</title>
 	 	<meta http-equiv= "X-UA-Compatible" content="IE=edge">
-	 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -12,17 +12,17 @@
 				<header class="header">
 					<div class="container">
 						<div class="image">
-							<img src="img/photo.jpg" class="photo" width="62px" height="62">
+							<div class="image__wrap"><img src="img/photo.jpg" class="image__photo"></div>
 								<div class="text-top">Кузнецова Анна</div>			
 						</div>
-						<div class="list">
-									<div class="menu">
-										<ul class="deletepoint">								
-											<li><span class="colormenu">Мои контакты</span>
-												<ul class="spisok">
-													<li class="border"><a href="mailto:anya.kuznetsova19@mail.ru"></a><img src="icon/images/envelope.png" class="picture">anya.kuznetsova19@mail.ru</li>
-													<li class="border"><img src="icon/images/tel.png" class="picture">+7 913 471 65 43</li>
-													<li><img src="icon/images/skype.png" class="picture">anna.kuznecova19</li>
+						<div class="contacts">
+									<div class="contacts__menu">
+										<ul class="contacts__list">								
+											<li><span class="contacts_menu">Мои контакты</span>
+												<ul class="contacts__list_hidden">
+													<li class="contacts__item"><img src="icon/images/envelope.png" class="contacts__picture"><a href="mailto:anya.kuznetsova19@mail.ru">anya.kuznetsova19@mail.ru</a></li>
+													<li class="contacts__item""><img src="icon/images/tel.png" class="contacts__picture"><a href="tel:+7 913 471 65 43">+7 913 471 65 43</a></li>
+													<li class="contacts__item""><img src="icon/images/skype.png" class="contacts__picture"><a href="skype:anna.kuznecova19">anna.kuznecova19</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -33,27 +33,29 @@
 				<div class="content">
 					<aside class="sidebar">
 						<nav>
-							<ul>
-								<li class="navigation__list"><a href="index.html" class="navigation__link_current navigation__link navigation__link_human">Обо мне </a></li>
-								<li class="navigation__list"><a href="career.html" class="navigation__link navigation__link_racket">Карьерный путь</a></li>
-								<li class="navigation__list"><a href="my_works.html" class="navigation__link navigation__link_bag">Портфолио</a></li>
+							<ul class="nav__list">
+								<li class="navigation__item"><a href="about.html" class="navigation__link_current navigation__link navigation__link_human">Обо мне </a></li>
+								<li class="navigation__item"><a href="career.html" class="navigation__link navigation__link_racket">Карьерный путь</a></li>
+								<li class="navigation__item"><a href="portfolio.html" class="navigation__link navigation__link_bag">Портфолио</a></li>
 							</ul>
 						</nav>
 					</aside>
 					<div class="variable-content">
 						<div class="image-wrap">
-							<img src="img/photo.jpg" class="avatar">
+							<img src="img/photo.jpg" class="image__avatar">
 						</div>
 							<div class="info">
-								<h1 class="about_me">
+								<h1 class="info__aboutme">
 									Обо мне
 								</h1> 
-									<div class="about_text"><p >
+									<div class="info__text"><p >
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 										"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""
 									</p></div>
 								<a href="CV.txt" download>
-									<div class="button"></div>
+									<div class="info__button">
+										
+									</div>
 								</a> 
 							</div>
 						</div>
@@ -65,18 +67,18 @@
 	
 	<footer class="footer">
 		<div class="footer-wrap">
-			<div class="copyright">
+			<div class="footer__copyright">
 				&copy Это мой сайт, прошу не копировать и не воровать его
 			</div>
-				<ul class="social">
-					<li class="social-item">
-						<a href="http://spritegen.website-performance.org/" class="sprite social-link-fb"></a>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="http://spritegen.website-performance.org/" class="sprite social__link_fb"></a>
 					</li>
-					<li class="social-item">
-						<a href="" class="sprite  social-link-vk"></a>
+					<li class="social__item">
+						<a href="" class="sprite  social__link_vk"></a>
 					</li>
-					<li class="social-item">
-						<a href="" class="sprite social-link-tw"></a>
+					<li class="social__item">
+						<a href="" class="sprite social__link_tw"></a>
 					</li>
 				</ul>
 		</div>
