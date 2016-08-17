@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-	<head>
-		<meta charset="utf-8">
-	 	<title>My site</title>
-	 	<meta http-equiv= "X-UA-Compatible" content="IE=edge">
-	 	<link rel="stylesheet" type="text/css" href="css/about.css">
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="main-container">
-				<header class="header">
-					<div class="container">
-						<div class="image">
-							<div class="image__wrap"><img src="img/photo.jpg" class="image__photo"></div>
-								<div class="text-top">Кузнецова Анна</div>			
+<head>
+	<meta charset="utf-8">
+	<title>My site</title>
+	<meta http-equiv= "X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-container">
+			<header class="header">
+				<div class="container">
+					<div class="image">
+						<div class="image__wrap">
+							<img src="img/photo.jpg" class="image__photo">
 						</div>
-						<div class="contacts">
-									<div class="contacts__menu">
-										<ul class="contacts__list">								
-											<li><span class="contacts_menu">Мои контакты</span>
-												<ul class="contacts__list_hidden">
-													<li class="contacts__item"><img src="icon/images/envelope.png" class="contacts__picture"><a href="mailto:anya.kuznetsova19@mail.ru">anya.kuznetsova19@mail.ru</a></li>
-													<li class="contacts__item""><img src="icon/images/tel.png" class="contacts__picture"><a href="tel:+7 913 471 65 43">+7 913 471 65 43</a></li>
-													<li class="contacts__item""><img src="icon/images/skype.png" class="contacts__picture"><a href="skype:anna.kuznecova19">anna.kuznecova19</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
+						<div class="text-top">Кузнецова Анна</div>			
 					</div>
-				</header>
-				<div class="content">
-					<aside class="sidebar">
-						<nav>
-							<ul class="nav__list">
-								<li class="navigation__item"><a href="about.html" class="navigation__link_current navigation__link navigation__link_human">Обо мне </a></li>
-								<li class="navigation__item"><a href="career.html" class="navigation__link navigation__link_racket">Карьерный путь</a></li>
-								<li class="navigation__item"><a href="portfolio.html" class="navigation__link navigation__link_bag">Портфолио</a></li>
-							</ul>
-						</nav>
-					</aside>
-					<div class="variable-content">
-						<div class="image-wrap">
-							<img src="img/photo.jpg" class="image__avatar">
-						</div>
-							<div class="info">
-								<h1 class="info__aboutme">
-									Обо мне
-								</h1> 
-									<div class="info__text"><p >
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""
-									</p></div>
-								<a href="CV.txt" download>
-									<div class="info__button">
-										
-									</div>
-								</a> 
-							</div>
-						</div>
+					<div class="menu">								
+						<span class="menu__text">Мои контакты</span>
+						<ul class="menu__list">
+							<a href="mailto:anya.kuznetsova19@mail.ru" class="menu__link menu__icon_border">
+								<li class="menu__item ">
+									<img src="icon/images/envelope.png" class="menu__icon ">anya.kuznetsova19@mail.ru
+								</li>
+							</a>
+							<a href="tel:+7 913 471 65 43" class="menu__link menu__icon_border">
+								<li class="menu__item ">
+									<img src="icon/images/tel.png" class="menu__icon ">+7 913 471 65 43
+								</li>
+							</a>
+							<a href="skype:anna.kuznecova19" class="menu__link">
+								<li class="menu__item">
+									<img src="icon/images/skype.png" class="menu__icon">anna.kuznecova19
+							</li>												
+							</a>
+						</ul>
 					</div>
-					
+				</div>
+			</header>
+		</div>	
+		<div class="content">
+			<aside class="sidebar">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<a href="about.html" class="navigation__link_current navigation__link navigation__link_human">
+							<li class="navigation__item">Обо мне </li>
+						</a>
+						<a href="career.html" class="navigation__link navigation__link_racket">
+							<li class="navigation__item">Карьерный путь</li>
+						</a>
+						<a href="portfolio.html" class="navigation__link navigation__link_bag">
+							<li class="navigation__item">Портфолио</li>
+						</a>
+					</ul>
+				</nav>
+			 </aside>
+			<div class="variable-content">
+				<div class="avatar__wrap">
+					<img src="img/photo_about.jpg" class="avatar__image">
+				</div>
+				<div class="info">
+					<h1 class="info__aboutme">
+						Обо мне
+					</h1> 
+					<div class="info__text"><p >
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""
+					</p></div>
+
+					<div class="info__button">
+						<a href="CV.txt" download class="info__button__link ">
+							<span class="info__button__icon "></span>
+							<span class="info__button__text">Скачать резюме</span>
+						</a>
 					</div>
+				</div>
 			</div>
-	</div>
-	
-	<footer class="footer">
-		<div class="footer-wrap">
-			<div class="footer__copyright">
-				&copy Это мой сайт, прошу не копировать и не воровать его
-			</div>
-				<ul class="social__list">
-					<li class="social__item">
-						<a href="http://spritegen.website-performance.org/" class="sprite social__link_fb"></a>
-					</li>
-					<li class="social__item">
-						<a href="" class="sprite  social__link_vk"></a>
-					</li>
-					<li class="social__item">
-						<a href="" class="sprite social__link_tw"></a>
-					</li>
-				</ul>
 		</div>
-	</footer>
-	</body>
+	</div>
+</div>		
+<footer class="footer">
+	<div class="footer-wrap">
+		<div class="footer__copyright">
+			&copy Это мой сайт, прошу не копировать и не воровать его
+		</div>
+		<ul class="social__list">
+			<a href="http://spritegen.website-performance.org/" class="sprite social__link_fb">
+				<li class="social__item"></li>
+			</a>
+			<a href="" class="sprite  social__link_vk">
+				<li class="social__item"></li>
+			</a>
+			<a href="" class="sprite social__link_tw">
+				<li class="social__item"></li>
+			</a>		
+		</ul>
+	</div>
+</footer>
+</body>
 </html>

@@ -11,6 +11,8 @@ body{
 	min-width: 400px;
 	width: 100%;
 	background-color: #f6f6f6;
+	position:relative;
+	min-height: 401px;
 }
 
 
@@ -33,7 +35,7 @@ body{
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
-	box-shadow: 0px 2px 1px 0px rgba(197,197,197,1);
+	box-shadow: 0 2px 1px 0 rgba(197,197,197,1);
 	
 }
 .image-wrap{
@@ -43,35 +45,35 @@ body{
 	border-radius: 50%;
 	display: block;
 	background: url(../img/photo.jpg);
-	margin:-70px auto 20px;
+	margin:-70px auto 0px;
 }
-.image__photo{
-	
-	
-}
+
 .entrance__name{
-	width: 100px;
+	width: 170px;
 	text-align: center;
-	font: 21px "OpenSans-Semibold"; 
+	font: 21px "OpenSans-Semibold", Arial, sans-serif;
+	font-weight: normal; 
   	color: rgb(65, 65, 65);
   	margin: auto;
-  	padding: 20px 20px;
+  	padding: 20px;
 }
 
 .entrance__buttom{
 	background: #33c1e3;
 	text-align: center;
-	border-radius: 0px 0px 10px 10px;
-	padding: 30px 30px;
+	border-radius: 0 0 10px 10px;
+	padding: 20px 80px;
 }
 .entrance__buttom__text{
 	text-decoration: none;
-	border: 2px solid #fff;
-	font: 14px "FiraSans-Bold";
+	border: 2px solid;
+	font: 14px "FiraSans-Bold", Arial, sans-serif;
+	font-weight: normal; 
   	color: rgb(255, 255, 255);
   	border-radius: 22px;
   	padding: 10px;
   	display: inline-block;
+  	transition: background,color .3s linear;
 }
 .entrance__buttom__text:hover{
 	background: #fff;

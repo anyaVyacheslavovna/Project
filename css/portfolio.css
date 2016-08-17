@@ -54,11 +54,11 @@ body{
 .image {
 	padding: 9px;
 	display: inline-block;
-	padding-left: 130px;
 }
 .container{
 	min-width: 960px;
 	margin: auto;
+	max-width: 1100px;
 }
 
 .text-top {
@@ -107,7 +107,6 @@ body{
 	display: inline-block;
 	height: 80px;
 	width: 123px;
-	margin-right: 240px;
 }
 .picture{
 	margin-right: 9px;
@@ -229,18 +228,7 @@ body{
 	width: 940px;
 	margin: auto;
 }
-.image-wrap{
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 55px;
-}
-.avatar{
-	border-radius: 100px;
-	height: 200px;
-	width: 200px;
-	border:5px solid #ffffff;
-	box-sizing: border-box;
-}
+
 .info{
 	height: 322px;
 	width: 399px;
