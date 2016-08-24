@@ -1,4 +1,4 @@
-* {
+html, body {
 	margin: 0;
 	padding: 0;
 }
@@ -39,14 +39,20 @@ a{
 	text-decoration: none;
 	display: inline-block;
 }
+ul{
+	list-style: none;
+}
 .wrapper{
 	min-height: 100%;
+	position: relative;
+	min-width: 1000px;
+}
+.wrapper:after{
+	height: 50px;
 }
 
 .main-container{
 	box-sizing: border-box;
-	min-height: 100%;
-	padding-bottom:41px;
 }
 /*   	HEADER */
 .header{
@@ -72,7 +78,7 @@ a{
 .container{
 	margin: auto;
 	max-width: 1008px;
-	padding: 10px 67px 0 8px;
+	padding: 11px 67px 0px 8px;
     box-sizing: border-box;
 }
 
@@ -83,16 +89,15 @@ a{
   display: inline-block;
   vertical-align: middle;
 }
-
 /*----------Выпадающий список Мои  Контакты------------*/
 .menu {
 	position: relative;	
 	float: right;
 	height: 54px;
-	width: 138px;
+	width: 121px;
 }
 
-.menu__text:hover +.menu__list{
+.menu__text:hover >.menu__list{
 	display: block;
 }
 
@@ -127,18 +132,19 @@ a{
 	background: #fff;
 	position: absolute;
 	width: 300px;
-	height: 135px;
-	top: 56px;
+	top: 40px;
 	right: -73px;
 	border:1px solid #dedede;
 	border-radius: 10px;
+	padding: 0;
+	z-index: 1;
 }
 
 .menu__list:before, .menu__list:after{
 	content: "";
 	position: absolute;
 	right: 142px;
-	bottom: 134px;
+	top: -23px;
 	border: 10px solid transparent;
 	border-bottom:14px solid #dedede;
 }
@@ -160,7 +166,10 @@ a{
 	list-style: none;
 	height: 45px;
 }
-
+.navigation__list{
+	padding:0;
+	margin: 0;
+}
 .navigation__link:hover{
 	display: block;
 	text-decoration: none;
@@ -194,7 +203,7 @@ a{
 
 }
 .navigation__link_current.navigation__link_racket{
-	background:url(../icon/images/racket-blue_03.png) no-repeat center left;;
+	background:url(../icon/images/racket-blue_03.png) no-repeat center left ;
 }
 .navigation__link_racket:hover{
 	background:url(../icon/images/racket-blue_03.png) no-repeat center left;
@@ -209,7 +218,7 @@ a{
 
 }
 .navigation__link_current.navigation__link_bag{
-	background:url(../icon/images/bag-blue.png) no-repeat,center left;
+	background:url(../icon/images/bag-blue.png) no-repeat center left;
 
 }
 
@@ -228,61 +237,81 @@ a{
 	}
 /*----------Основной контен--------*/
 .variable-content{
-	width: 700px;
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
+	width: 730px;
 }
 .sidebar{
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 20px;
 	width: 190px;
-	margin-top: 20px;
 }
 .content{
-	width: 940px;
+	width: 960px;
+    min-width: 1000px;
 	margin: auto;
+	padding: 23px 23px 63px 23px;
+	box-sizing: border-box;
 }
 .path__image-wrap{
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 55px;
 }
-.avatar{
+.path__avatar{
 	border-radius: 10px;
 	height: 220px;
 	width: 220px;
-	border:5px solid #ffffff;
+	border:5px solid #fff;
 	box-sizing: border-box;
 }
+.path:last-child{
+	margin-bottom: 0;
+}
 .path__text{
-	display: inline-block;
 	margin-bottom: 27px;
-	min-width: 275px;
-
+	font: 35px "FiraSans-Medium", Arial, sans-serif;
+	color:#414141;
 }
 .path-wrap{
 	display: inline-block;
-	width: 245px; 
-	font: 35px "FiraSans-Medium";
-	color:#414141;
 	vertical-align: top;
-	padding-top: 20px;
 }
 .path{
 	display: inline-block;
-	width: 450px;
-	margin-top: 74px;
-	margin-bottom: 28px;
+	position: relative;
 }
-
+.path:after{
+	content: "";
+    display: block;
+    position: absolute;
+    background: #ddd;
+    width: 1px;
+    height: 197px;
+    top: 64px;
+    left: 45px;
+    z-index: -1;
+}
+.path:before{
+	content: "";
+    display: block;
+    position: absolute;
+    background: #ddd;
+    width: 1px;
+    height: 88px;
+    bottom: 65px;
+    left: 45px;
+}
 .path__year{
 	display: inline-block;
 	margin-right: 10px;
 	vertical-align: middle;
-	font-family: "FiraSans-Light"
+	font: 14px "FiraSans-Light", Arial, sans-serif;
+	position: relative;
 }
+
 .path__year_circle{
 
 	width: 10px;
@@ -294,52 +323,65 @@ a{
 	bottom:31px;
 	margin-right: 10px;
 }
-.path__places:hover{
-	background: #33c1e3;
-	color: white;
-}
-.path__year:hover{
-	color:#33c1e3;
-}
+.path__year_circle:after{
+	content: "";
+	display: block;
+	position: absolute;
+	background: red;
 
-.path__year_circle:hover{
-	box-shadow: 0px 0px 1px 5px #94e0f2;
-}
 
+}
 .path__places{
 	min-width: 350px;
-	min-height: 107;
 	display: inline-block;
 	vertical-align: middle;
-	background: #ffffff;
+	background: #fff;
 	box-shadow: 1px 2px 14px -1px rgba(213,213,213,0.61);
 	border-radius: 15px;
 	color: grey;
 	padding: 21px 0px 21px 21px;
 	margin-bottom: 18px;
 	box-sizing: border-box;
+	padding: 18px 0 18px 16px;
 }
-.path__places-header{	
-	font: 16px "FiraSans-Regular";
+.path__places_header{	
+	font: 16px "FiraSans-Regular", Arial, sans-serif;
+	margin:0;
 
 }
-.path__places-text{
-	font: 14px "FiraSans-Light";
+.path__places_text{
+	font: 14px "FiraSans-Light", Arial, sans-serif;
+	margin:0;
 
 }
-.path__list :hover {
 
+.path__list{
+	padding: 0;
+	margin:0;
+	position: relative;
+}
+.path__list:hover .path__year{
+	font: bold 18px "FiraSans-Light", Arial, sans-serif;
+	color:#33c1e3;
+	
+}
+.path__list:hover .path__year_circle{
+	box-shadow: 0px 0px 1px 5px #94e0f2;
+	transition: all .2s linear;
+}
+.path__list:hover .path__places{
+	background: #33c1e3;
+	color: white;
+	transition: all .2s linear;
 }
 /*------Иконки------*/
 .social__list {	
-	min-width: 107px;
 	display: inline-block;
-	vertical-align: middle;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	margin-top: -18px;
-	padding: 0 95px 0 0;
+    vertical-align: middle;
+    position: absolute;
+    right: 79px;
+    top: 50%;
+    margin: -18px;
 }
 .social__item{
 	list-style: none;
@@ -364,37 +406,35 @@ a{
 
 }
 
- .social__link_tw:hover {
+.social__link_tw:hover {
     width: 31px;
     height: 30px;
     background-position: -46px -5px;
 }
 
- .social__link_vk {
+.social__link_vk {
     width: 31px;
     height: 30px;
     background-position: -5px -45px;
 }
 
- .social__link_vk:hover{
+.social__link_vk:hover{
     width: 31px;
     height: 30px;
     background-position: -46px -45px;
 }
 
- .social__link_fb {
+.social__link_fb {
     width: 31px;
     height: 30px;
     background-position: -87px -5px;
 }
 
- .social__link_fb:hover {
+.social__link_fb:hover {
     width: 31px;
     height: 30px;
     background-position: -87px -45px;
 }
-
-
 .footer{
 	height: 50px;
 	min-width: 960px;

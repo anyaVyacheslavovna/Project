@@ -40,7 +40,10 @@ ul{
 .wrapper{
 	min-height: 100%;
 	position: relative;
-	min-width: 960px;
+	min-width: 1000px;
+}
+.wrapper:after{
+	height: 50px;
 }
 
 .main-container{
@@ -229,6 +232,7 @@ ul{
 /*----------Основной контен--------*/
 .variable-content{
 	display: inline-block;
+	width: 730px;
 }
 .sidebar{
 	display: inline-block;
@@ -238,11 +242,10 @@ ul{
 }
 .content{
 	width: 960px;
+	min-width: 1000px;
 	margin: auto;
 	padding: 23px 23px 60px 23px;
 	box-sizing: border-box;
-
-
 }
 .avatar__wrap{
 	display: inline-block;
@@ -321,14 +324,12 @@ background: url(../icon/images/download_white.png) no-repeat;
 
 /*------Иконки------*/
 .social__list {	
-	min-width: 107px;
-	display: inline-block;
-	vertical-align: middle;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	margin: -18px;
-	padding: 2px 95px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 79px;
+    top: 50%;
+    margin: -18px;
 }
 .social__item{
 	list-style: none;
@@ -382,8 +383,6 @@ background: url(../icon/images/download_white.png) no-repeat;
     height: 30px;
     background-position: -87px -45px;
 }
-
-
 .footer{
 	height: 50px;
 	min-width: 960px;
